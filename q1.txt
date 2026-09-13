@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main()
+{
+    int balance, withdrawal;
+
+    printf("Enter available balance: ");
+    scanf("%d", &balance);
+
+    printf("Enter withdrawal amount: ");
+    scanf("%d", &withdrawal);
+
+    if (withdrawal > 0 && withdrawal <= balance)
+    {
+        printf("Withdrawal Approved");
+    }
+    else
+    {
+        printf("Withdrawal Denied");
+    }
+
+    return 0;
+}
